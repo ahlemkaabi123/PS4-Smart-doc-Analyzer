@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartDoc Analyzer</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>SmartDoc Analyzer</h1>
+            <p>Upload PDF documents and ask questions about their content</p>
+        </header>
+
+        <main>
+            <section class="upload-section">
+                <h2>Upload Document</h2>
+                <form id="uploadForm">
+                    <input type="file" id="document" accept=".pdf" required>
+                    <button type="submit">Upload & Process</button>
+                </form>
+                <div id="uploadStatus"></div>
+            </section>
+
+            <section class="qa-section">
+                <h2>Ask Questions</h2>
+                <form id="qaForm">
+                    <select id="documentSelect" required>
+                        <option value="">Select a document</option>
+                    </select>
+                    <textarea id="question" placeholder="Type your question here..." required></textarea>
+                    <button type="submit">Ask Question</button>
+                </form>
+                <div id="answer"></div>
+            </section>
+        </main>
+    </div>
+    <script src="/script.js"></script>
+</body>
+</html> 
